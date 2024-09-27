@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcover - Tailwind CSS Business Landing Page Template</title>
+
+    <!-- favicon icon  -->
+    <link rel="icon" href="assets/favicon.ico">
+
+    <!-- font awesome css file -->
+     <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- slider css file -->
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- output css file -->
+     <link rel="stylesheet" href="css/output.css">
+
+    <!-- media css file -->
+     <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body class="font-Libre-regular text-base text-black dark:text-white bg-white dark:bg-slate-900">
+
+    <!-- page loader start -->
+
+     <div class="loading w-full h-full bg-gray-800 fixed top-0 left-0 z-10 flex justify-center items-center">
+        <div class="loader JS_on">
+            <span class="binary"></span>
+            <span class="binary"></span>
+            <span class="getting-there">LOADING STUFF...</span>
+        </div>
+     </div>
+
+    <!-- page loader end -->
+
+    <!-- Dark-Mode button start -->
+
+       <div class="darkmode w-[50px] h-[50px] bg-slate-800 leading-[48px] text-white rounded-full text-center fixed bottom-7 left-7 z-20 text-xl shadow-lg shadow-slate-600 cursor-pointer">
+        <i class="fa-regular fa-moon"></i>
+       </div>
+
+    <!-- Dark-Mode button end -->
+
+    <!-- scroll icon start -->
+   
+    <div class="sticky_icon w-[50px] h-[50px] bg-teal-400 text-white shadow-lg shadow-slate-500 rounded-full text-center fixed bottom-7 right-7">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- scroll icon end -->
+
+    <section id="home"></section>
+
+    <!-- header section start -->
+
+    <section class="sticky top-0 left-0 z-[2]">
+        <header class="bg-slate-50 drop-shadow-lg relative dark:bg-slate-800">
+            <div class="container flex justify-between items-center overflow-hidden">
+                <div class="left-info">
+                    <a href="" class="py-5 px-5 block dark:hidden"><img src="assets/logo1.png" alt=""></a>
+                    <a href="" class="py-5 px-5 hidden dark:block"><img src="assets/logo2.png" alt=""></a>
+                </div>
+                <div class="right-info">
+                    <nav class="hidden lg:block">
+                        <ul class="flex items-center">
+                            <li><a href="#home" class="py-5 px-5 font-semibold text-gray-500 text-sm hover:text-theme transition duration-75 dark:text-white hover:dark:text-theme">HOME</a></li>
+                            <li><a href="#service" class="py-5 px-5 font-semibold text-gray-500 text-sm hover:text-theme transition duration-75 dark:text-white hover:dark:text-theme">SERVICES</a></li>
+                            <li><a href="#testimonial" class="py-5 px-5 font-semibold text-gray-500 text-sm hover:text-theme transition duration-75 dark:text-white hover:dark:text-theme">TESTIMONIAL</a></li>
+                            <li><a href="#pricing" class="py-5 px-5 font-semibold text-gray-500 text-sm hover:text-theme transition duration-75 dark:text-white hover:dark:text-theme">PRICING</a></li>
+                            <li><a href="#blogs" class="py-5 px-5 font-semibold text-gray-500 text-sm hover:text-theme transition duration-75 dark:text-white hover:dark:text-theme">BLOGS</a></li>
+                            <li><a href="#contactus" class="py-5 px-5 font-semibold text-gray-500 text-sm hover:text-theme transition duration-75 dark:text-white hover:dark:text-theme">CONTACT US</a></li>
+                            <li class="py-5 px-5">
+                                <button class="bg-theme px-7 py-2 rounded-lg text-white text-[12px]">LOGIN</button>
+                            </li>
+                        </ul>
+                    </nav>
+    
+
+
+                    <button class="btn md:block lg:hidden" type="button">
+                        <i class="fa-solid fa-bars border-2 border-theme p-3 rounded"></i>
+                    </button>
+                    <ul class="items-center absolute bg-gray-100 top-full right-0 w-80 hidden moblie_main_menu dark:bg-slate-900 shadow dark:shadow-gray-700 divide-y divide-slate-300 dark:divide-slate-700">
+                        <li class="py-3 px-6"><a href="#home" class="py-5 px-5 font-semibold text-gray-500 text-[14px] hover:text-theme transition duration-75">HOME</a></li>
+                        <li class="py-3 px-6"><a href="#service" class="py-5 px-5 font-semibold text-gray-500 text-[14px] hover:text-theme transition duration-75">SERVICES</a></li>
+                        <li class="py-3 px-6"><a href="#testimonial" class="py-5 px-5 font-semibold text-gray-500 text-[14px] hover:text-theme transition duration-75">TESTIMONIAL</a></li>
+                        <li class="py-3 px-6"><a href="#pricing" class="py-5 px-5 font-semibold text-gray-500 text-[14px] hover:text-theme transition duration-75">PRICING</a></li>
+                        <li class="py-3 px-6"><a href="#blogs" class="py-5 px-5 font-semibold text-gray-500 text-[14px] hover:text-theme transition duration-75">BLOGS</a></li>
+                        <li class="py-3 px-6"><a href="#contactus" class="py-5 px-5 font-semibold text-gray-500 text-[14px] hover:text-theme transition duration-75">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </section>
+  
+    <!-- header section end -->
+
+
+    <!-- slider section start -->
+ 
+    <div class="owl-carousel owl-theme" id="slider">
+        <div class="items relative" data-dot="<button>01</button>">
+            <img src="assets/slider1.jpeg" alt="" class="brightness-[.4] max-h-[700px] object-cover">
+            <div class="text_box absolute top-[30%] xl:left-72 lg:left-40 lg:top-[25%] md:left-32 md:top-[20%] sm:left-24 sm:top-[15%]">
+                <h1 class="font-bold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl capitalize text-white mb-5">Get all the <br> inspirations for your business</h1>
+                <p class="text-white/70 text-lg max-w-xl">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                <div class="mt-6">
+                    <a href="#" class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">See More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="items relative" data-dot="<button>02</button>">
+            <img src="assets/slider2.jpeg" alt="" class="brightness-[.4] max-h-[700px] object-cover">
+            <div class="text_box absolute top-[30%] xl:left-72 lg:left-40 lg:top-[25%] md:left-32 md:top-[20%] sm:left-24 sm:top-[15%]">
+                <h1 class="font-bold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl capitalize text-white mb-5">Get all the <br> inspirations for your business</h1>
+                <p class="text-white/70 text-lg max-w-xl">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                <div class="mt-6">
+                    <a href="#" class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider section end -->
+    
+
+    <!-- Experience section start -->
+
+     <section class="py-16 md:py-24">
+        <div class="container">
+            <div class="flex flex-wrap items-center">
+                <div class="md:w-1/2 w-full p-2">
+                    <div class="me-8">
+                       <div class="relative">
+                          <img src="assets/Experience.jpeg" alt="" class="rounded-full drop-shadow-xl">
+                          <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 size-56 flex justify-center items-center bg-white rounded-full drop-shadow-xl dark:bg-slate-900 shadow dark:shadow-gray-700">
+                            <div class="text text-center">
+                                <h1 class="font-extrabold text-6xl mb-4 ps-3 text-theme">15+</h1>
+                                <span class="font-semibold">Years <br>  Experience</span>
+                            </div>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full p-2">
+                    <div class="ms-8">
+                        <div class="Experience_info">
+                            <h6 class="uppercase font-semibold text-theme text-sm mb-2">Who Are We ?</h6>
+                            <h3 class="leading-normal font-semibold text-2xl mb-4">We're a global stakeholder <br>  relations and partnership <br> building consultancy.</h3>
+                            <p class="max-w-2xl text-slate-400 mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
+                            <a href="#" class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Experience section end -->
+
+    <!-- Services section start -->
+     
+     <section class="Services py-16 md:py-24 bg-slate-50 dark:bg-slate-800" id="service">
+        <div class="container">
+            <div class="text-center pb-6">
+                 <h3 class="font-semibold text-2xl mb-4 leading-normal">Our Services</h3>
+                 <p class="max-w-xl mx-auto text-slate-400">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+            </div>
+            <div class="flex flex-wrap mt-9">
+                <div class="xl:w-1/4 md:w-1/2 lg:w-1/3 w-full p-4">
+                    <div class="box p-8 drop-shadow-md bg-white rounded-md h-fit relative overflow-hidden group dark:shadow-gray-700 dark:bg-slate-900">
+                        <div class="flex items-center justify-center size-14 rounded-full bg-gradient-to-r from-transparent to-theme/25 group-hover:bg-theme/40 duration-500">
+                            <i class="fa-solid fa-arrow-trend-up text-theme text-xl -rotate-3 group-hover:text-black duration-500"></i>
+                        </div>
+                        <div class="services_content mt-6">
+                           <a href="" class="text-lg font-semibold hover:text-theme">Grow Your Business</a>
+                           <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                           <div class="mt-6">
+                              <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                           </div>
+                        </div>
+                        <div class="bg_img absolute -right-16 -bottom-3 opacity-15">
+                            <i class="fa-solid fa-arrow-trend-up text-theme/25 text-[200px] -rotate-3 group-hover:text-theme/50 duration-500"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/4 md:w-1/2 lg:w-1/3 w-full p-4">
+                    <div class="box p-8 drop-shadow-md bg-white rounded-md h-fit relative overflow-hidden group dark:shadow-gray-700 dark:bg-slate-900">
+                        <div class="flex items-center justify-center size-14 rounded-full bg-gradient-to-r from-transparent to-theme/25 group-hover:bg-theme/40 duration-500">
+                            <i class="fa-solid fa-dollar-sign text-theme text-xl group-hover:text-black duration-500"></i>
+                        </div>
+                        <div class="services_content mt-6">
+                           <a href="" class="text-lg font-semibold hover:text-theme">Drive More Sales</a>
+                           <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                           <div class="mt-6">
+                              <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                           </div>
+                        </div>
+                        <div class="bg_img absolute -right-16 -bottom-3 opacity-15">
+                            <i class="fa-solid fa-dollar-sign text-theme/25 text-[200px] group-hover:text-theme/50 duration-500"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/4 md:w-1/2 lg:w-1/3 w-full p-4">
+                    <div class="box p-8 drop-shadow-md bg-white rounded-md h-fit relative overflow-hidden group dark:shadow-gray-700 dark:bg-slate-900">
+                        <div class="flex items-center justify-center size-14 rounded-full bg-gradient-to-r from-transparent to-theme/25 group-hover:bg-theme/40 duration-500">
+                            <i class="fa-regular fa-compass text-theme text-xl group-hover:text-black duration-500"></i>
+                        </div>
+                        <div class="services_content mt-6">
+                           <a href="" class="text-lg font-semibold hover:text-theme">Handled By Expert</a>
+                           <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                           <div class="mt-6">
+                              <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                           </div>
+                        </div>
+                        <div class="bg_img absolute -right-16 -bottom-3 opacity-15">
+                            <i class="fa-regular fa-compass text-theme/25 text-[200px] group-hover:text-theme/50 duration-500"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/4 md:w-1/2 lg:w-1/3 w-full p-4">
+                    <div class="box p-8 drop-shadow-md bg-white rounded-md h-fit relative overflow-hidden group dark:shadow-gray-700 dark:bg-slate-900">
+                        <div class="flex items-center justify-center size-14 rounded-full bg-gradient-to-r from-transparent to-theme/25 group-hover:bg-theme/40 duration-500">
+                            <i class="fa-solid fa-timeline text-theme text-xl group-hover:text-black duration-500"></i>
+                        </div>
+                        <div class="services_content mt-6">
+                           <a href="" class="text-lg font-semibold hover:text-theme">Discussion For Idea</a>
+                           <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                           <div class="mt-6">
+                              <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                           </div>
+                        </div>
+                        <div class="bg_img absolute -right-16 -bottom-3 opacity-15">
+                            <i class="fa-solid fa-timeline text-theme/25 text-[200px] group-hover:text-theme/50 duration-500"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/4 md:w-1/2 lg:w-1/3 w-full p-4">
+                    <div class="box p-8 drop-shadow-md bg-white rounded-md h-fit relative overflow-hidden group dark:shadow-gray-700 dark:bg-slate-900">
+                        <div class="flex items-center justify-center size-14 rounded-full bg-gradient-to-r from-transparent to-theme/25 group-hover:bg-theme/40 duration-500">
+                            <i class="fa-solid fa-cube text-theme text-xl group-hover:text-black duration-500"></i>
+                        </div>
+                        <div class="services_content mt-6">
+                           <a href="" class="text-lg font-semibold hover:text-theme">Web Desing</a>
+                           <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                           <div class="mt-6">
+                              <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                           </div>
+                        </div>
+                        <div class="bg_img absolute -right-16 -bottom-3 opacity-15">
+                            <i class="fa-solid fa-cube text-theme/25 text-[200px] group-hover:text-theme/50 duration-500"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/4 md:w-1/2 lg:w-1/3 w-full p-4">
+                    <div class="box p-8 drop-shadow-md bg-white rounded-md h-fit relative overflow-hidden group dark:shadow-gray-700 dark:bg-slate-900">
+                        <div class="flex items-center justify-center size-14 rounded-full bg-gradient-to-r from-transparent to-theme/25 group-hover:bg-theme/40 duration-500">
+                            <i class="fa-solid fa-camera-rotate text-theme text-xl group-hover:text-black duration-500"></i>
+                        </div>
+                        <div class="services_content mt-6">
+                           <a href="" class="text-lg font-semibold hover:text-theme">Network Security</a>
+                           <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                           <div class="mt-6">
+                              <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                           </div>
+                        </div>
+                        <div class="bg_img absolute -right-16 -bottom-3 opacity-15">
+                            <i class="fa-solid fa-camera-rotate text-theme/25 text-[200px] group-hover:text-theme/50 duration-500"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/4 md:w-1/2 lg:w-1/3 w-full p-4">
+                    <div class="box p-8 drop-shadow-md bg-white rounded-md h-fit relative overflow-hidden group dark:shadow-gray-700 dark:bg-slate-900">
+                        <div class="flex items-center justify-center size-14 rounded-full bg-gradient-to-r from-transparent to-theme/25 group-hover:bg-theme/40 duration-500">
+                            <i class="fa-regular fa-bell text-theme text-xl group-hover:text-black duration-500"></i>
+                        </div>
+                        <div class="services_content mt-6">
+                           <a href="" class="text-lg font-semibold hover:text-theme">Social Media</a>
+                           <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                           <div class="mt-6">
+                              <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                           </div>
+                        </div>
+                        <div class="bg_img absolute -right-16 -bottom-3 opacity-15">
+                            <i class="fa-regular fa-bell text-theme/25 text-[200px] group-hover:text-theme/50 duration-500"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/4 md:w-1/2 lg:w-1/3 w-full p-4">
+                    <div class="box p-8 drop-shadow-md bg-white rounded-md h-fit relative overflow-hidden group dark:shadow-gray-700 dark:bg-slate-900">
+                        <div class="flex items-center justify-center size-14 rounded-full bg-gradient-to-r from-transparent to-theme/25 group-hover:bg-theme/40 duration-500">
+                            <i class="fa-solid fa-display text-theme text-xl group-hover:text-black duration-500"></i>
+                        </div>
+                        <div class="services_content mt-6">
+                           <a href="" class="text-lg font-semibold hover:text-theme">Design & Branding</a>
+                           <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                           <div class="mt-6">
+                              <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                           </div>
+                        </div>
+                        <div class="bg_img absolute -right-16 -bottom-3 opacity-15">
+                            <i class="fa-solid fa-display text-theme/25 text-[200px] group-hover:text-theme/50 duration-500"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Services section end -->
+
+    <!-- Performance section start -->
+
+     <section class="Performance py-16 md:py-24">
+        <div class="container">
+            <div class="text-center pb-6">
+                <h3 class="font-semibold text-2xl mb-4 leading-normal">A Performance-driven Marketing Agency</h3>
+                <p class="max-w-xl mx-auto text-slate-400">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+           </div>
+           <div class="flex flex-wrap mt-9">
+                <div class="xl:w-4/12 lg:w-4/12 md:w-6/12 w-full p-4">
+                    <div class="me-8 sticky top-20">
+                        <ul class="bg-white shadow rounded-md p-6 text-black dark:bg-slate-900 dark:shadow-gray-700">
+                            <li class="mb-3">
+                                <div class="px-4 py-2 bg-theme rounded-md text-white font-medium text-start w-full cursor-pointer">
+                                    <span class="block">Step 1</span>
+                                    <span class="text-lg mt-2 block">SEO Audit</span>
+                                    <span class="block mt-2">We offer flexible and comprehensive online marketing plans</span>
+                                </div>
+                            </li>
+                            <li class="mb-3 group">
+                                <div class="px-4 py-2 bg-transparent rounded-md hover:text-teal-500 hover:bg-slate-50 font-medium text-start w-full duration-500 cursor-pointer dark:hover:text-white dark:hover:bg-slate-800 dark:text-white">
+                                    <span class="block">Step 2</span>
+                                    <span class="text-lg mt-2 block">Project Execution</span>
+                                    <span class="block mt-2">We offer flexible and comprehensive online marketing plans</span>
+                                </div>
+                            </li>
+                            <li class="mb-3 group">
+                                <div class="px-4 py-2 bg-transparent rounded-md hover:text-teal-500 hover:bg-slate-50 font-medium text-start w-full duration-500 cursor-pointer dark:hover:text-white dark:hover:bg-slate-800 dark:text-white">
+                                    <span class="block">Step 3</span>
+                                    <span class="text-lg mt-2 block">Results & Reporting</span>
+                                    <span class="block mt-2">We offer flexible and comprehensive online marketing plans</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="xl:w-8/12 lg:w-8/12 md:w-6/12 w-full p-4">
+                    <div>
+                        <div class="bg-white shadow rounded-md p-6 dark:bg-slate-900 dark:shadow-gray-700">
+                            <div class="img">
+                                <img src="assets/Performance.jpeg" alt="" class="rounded-md">
+                            </div>
+                            <div class="mt-6">
+                                <h5 class="text-lg font-medium">SEO Audit</h5>
+                                <p class="text-slate-400 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, impedit vitae. Nobis, similique omnis cumque sapiente laboriosam animi quod cupiditate?</p>
+                                <div class="mt-4">
+                                    <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+     </section>
+    
+    <!-- Performance section end -->
+
+    <!-- Free-Trial section start -->
+
+     <section class="free-trial py-16 md:py-24 bg-theme relative before:content-[''] before:w-full before:h-[40%] before:bg-white before:absolute before:left-0 before:top-0 before:dark:bg-slate-900">
+        <div class="container">
+            <div class="w-full justify-center flex items-center">
+                <div class="text-center justify-center md:text-start z-[1]">
+                    <img src="assets/free-trial.png" alt="">
+                </div>
+            </div>
+            <div class="free_trial_content md:mt-8 xl:flex lg:flex md:flex">
+                <div class="w-full md:text-start">
+                    <div class="mt-8 text-center">
+                        <h6 class="text-white/70 text-sm font-semibold uppercase">Get Free Trial</h6>
+                        <h3 class="font-semibold text-2xl leading-normal text-white mt-2">Get An Easy Start <br> With Upcover Now</h3>
+                    </div>
+                </div>
+                <div class="w-full md:text-start sm:text-center">
+                    <div class="mt-8">
+                        <p class="text-white/70 xl:pe-36 mx-auto mb-2">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                        <div class="mt-4">
+                            <a href="" class="text-white">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Free-Trial section end -->
+
+    <!-- Users section start -->
+
+    <section class="Users py-16 md:py-24" id="testimonial">
+        <div class="container">
+            <div class="text-center pb-6">
+                <h3 class="font-semibold text-2xl mb-4 leading-normal">What Our Users Say</h3>
+                <p class="max-w-xl mx-auto text-slate-400">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+           </div>
+
+           <div class="owl-carousel owl-theme hover:cursor-e-resize" id="testimonials">
+                <!-- item1 -->
+                <div class="testimonial-card bg-white p-5 dark:bg-slate-900">
+                    <main class="test-card-body shadow-lg p-7 text-center rounded-md relative dark:border dark:border-gray-500">
+                        <div class="quote mb-2">
+                            <i class="fa fa-quote-left text-theme text-[40px]"></i>
+                        </div>
+                        <p class="text-slate-400 mb-3">" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. "</p>
+                        <div class="ratings mt-2 text-[10px] text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </main>
+                    <div class="profile flex justify-center items-center flex-col mt-6">
+                        <div class="profile-image w-[55px] h-[55px] rounded-full overflow-hidden">
+                            <img src="assets/t1.jpeg" class="object-cover">
+                        </div>
+                        <div class="profile-desc flex flex-col items-center mt-2">
+                            <h6 class="mt-2 font-semibold">Calvin Carlo</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item1 -->
+
+                <!-- item2 -->
+                <div class="testimonial-card bg-white p-5 dark:bg-slate-900">
+                    <main class="test-card-body shadow-lg p-7 text-center rounded-md relative dark:border dark:border-gray-500">
+                        <div class="quote mb-2">
+                            <i class="fa fa-quote-left text-theme text-[40px]"></i>
+                        </div>
+                        <p class="text-slate-400 mb-3">" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. "</p>
+                        <div class="ratings mt-2 text-[10px] text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </main>
+                    <div class="profile flex justify-center items-center flex-col mt-6">
+                        <div class="profile-image w-[55px] h-[55px] rounded-full overflow-hidden">
+                            <img src="assets/t2.jpeg" class="object-cover">
+                        </div>
+                        <div class="profile-desc flex flex-col items-center mt-2">
+                            <h6 class="mt-2 font-semibold">Christa Smith</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item2 -->
+
+                <!-- item3 -->
+                <div class="testimonial-card bg-white p-5 dark:bg-slate-900">
+                    <main class="test-card-body shadow-lg p-7 text-center rounded-md relative dark:border dark:border-gray-500">
+                        <div class="quote mb-2">
+                            <i class="fa fa-quote-left text-theme text-[40px]"></i>
+                        </div>
+                        <p class="text-slate-400 mb-3">" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. "</p>
+                        <div class="ratings mt-2 text-[10px] text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </main>
+                    <div class="profile flex justify-center items-center flex-col mt-6">
+                        <div class="profile-image w-[55px] h-[55px] rounded-full overflow-hidden">
+                            <img src="assets/t3.jpeg" class="object-cover">
+                        </div>
+                        <div class="profile-desc flex flex-col items-center mt-2">
+                            <h6 class="mt-2 font-semibold">Jemina CLone</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item3 -->
+
+                <!-- item4 -->
+                <div class="testimonial-card bg-white p-5 dark:bg-slate-900">
+                    <main class="test-card-body shadow-lg p-7 text-center rounded-md relative dark:border dark:border-gray-500">
+                        <div class="quote mb-2">
+                            <i class="fa fa-quote-left text-theme text-[40px]"></i>
+                        </div>
+                        <p class="text-slate-400 mb-3">" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. "</p>
+                        <div class="ratings mt-2 text-[10px] text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </main>
+                    <div class="profile flex justify-center items-center flex-col mt-6">
+                        <div class="profile-image w-[55px] h-[55px] rounded-full overflow-hidden">
+                            <img src="assets/t4.jpeg" class="object-cover">
+                        </div>
+                        <div class="profile-desc flex flex-col items-center mt-2">
+                            <h6 class="mt-2 font-semibold">Smith Vodka</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item4 -->
+
+                <!-- item5 -->
+                <div class="testimonial-card bg-white p-5 dark:bg-slate-900">
+                    <main class="test-card-body shadow-lg p-7 text-center rounded-md relative dark:border dark:border-gray-500">
+                        <div class="quote mb-2">
+                            <i class="fa fa-quote-left text-theme text-[40px]"></i>
+                        </div>
+                        <p class="text-slate-400 mb-3">" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. "</p>
+                        <div class="ratings mt-2 text-[10px] text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </main>
+                    <div class="profile flex justify-center items-center flex-col mt-6">
+                        <div class="profile-image w-[55px] h-[55px] rounded-full overflow-hidden">
+                            <img src="assets/t5.jpeg" class="object-cover">
+                        </div>
+                        <div class="profile-desc flex flex-col items-center mt-2">
+                            <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item5 -->
+
+                <!-- item6 -->
+                <div class="testimonial-card bg-white p-5 dark:bg-slate-900">
+                    <main class="test-card-body shadow-lg p-7 text-center rounded-md relative dark:border dark:border-gray-500">
+                        <div class="quote mb-2">
+                            <i class="fa fa-quote-left text-theme text-[40px]"></i>
+                        </div>
+                        <p class="text-slate-400 mb-3">" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. "</p>
+                        <div class="ratings mt-2 text-[10px] text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </main>
+                    <div class="profile flex justify-center items-center flex-col mt-6">
+                        <div class="profile-image w-[55px] h-[55px] rounded-full overflow-hidden">
+                            <img src="assets/t6.jpeg" class="object-cover">
+                        </div>
+                        <div class="profile-desc flex flex-col items-center mt-2">
+                            <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item6 -->
+           </div>
+        </div>
+    </section>
+
+    <!-- Users section end -->
+
+    <!-- Our-pricing section start -->
+
+    <section class="Our-pricing py-16 md:py-24 bg-slate-50 dark:bg-slate-800" id="pricing">
+        <div class="container">
+            <div class="text-center pb-6">
+                <h3 class="font-semibold text-2xl mb-4 leading-normal">Our Pricing</h3>
+                <p class="max-w-xl mx-auto text-slate-400">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+            </div>
+
+           <div class="flex flex-wrap mt-9">
+             <div class="xl:w-1/4 md:w-1/2 w-full p-5">
+                <div class="p-8 shadow-lg rounded-lg dark:shadow-gray-700 dark:bg-slate-900">
+                    <h6 class="font-semibold mb-5 text-xl">Free</h6>
+                    <div class="flex mb-5">
+                        <span class="text-lg font-medium">$</span>
+                        <span class="price text-5xl h6 font-semibold mb-0">0</span>
+                        <span class="text-lg font-medium self-end mb-1">/mo</span>
+                    </div>
+                    <ul class="list-none text-slate-400">
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span class="leading-7">We offers a free month of service for new customers.</span>
+                      </li>
+                    </ul>
+                    <a href="" class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-semibold rounded-md w-full mt-5 bg-theme/5 hover:bg-theme duration-300 hover:text-white text-theme">Free Demo</a>
+                </div>
+             </div>
+
+             <div class="xl:w-1/4 md:w-1/2 w-full p-5">
+                <div class="p-8 shadow-lg rounded-lg dark:shadow-gray-700 dark:bg-slate-900">
+                    <h6 class="font-semibold mb-5 text-xl">Single</h6>
+                    <div class="flex mb-5">
+                        <span class="text-lg font-medium">$</span>
+                        <span class="price text-5xl h6 font-semibold mb-0">9</span>
+                        <span class="text-lg font-medium self-end mb-1">/mo</span>
+                    </div>
+                    <ul class="list-none text-slate-400">
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span class="leading-7">We offers a free 7 days of service for new customers.</span>
+                      </li>
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span class="leading-7">Our Talented & Experienced Marketing Agency</span>
+                      </li>
+                    </ul>
+                    <a href="" class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-semibold rounded-md w-full mt-5 bg-theme/5 hover:bg-theme duration-300 hover:text-white text-theme">Subscribe Now</a>
+                </div>
+             </div>
+
+             <div class="xl:w-1/4 md:w-1/2 w-full p-5">
+                <div class="bg-gradient-to-tr from-teal-500 to-indigo-600 text-white py-2 px-6 h6 text-lg font-medium rounded-tl-lg rounded-tr-lg">Popular</div>
+                <div class="p-8 shadow-lg rounded-lg dark:shadow-gray-700 dark:bg-slate-900">
+                    <h6 class="font-semibold mb-5 text-xl">Professional</h6>
+                    <div class="flex mb-5">
+                        <span class="text-lg font-medium">$</span>
+                        <span class="price text-5xl h6 font-semibold mb-0">49</span>
+                        <span class="text-lg font-medium self-end mb-1">/mo</span>
+                    </div>
+                    <ul class="list-none text-slate-400">
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span class="leading-7">We offers a free 14 days of service for new customers.</span>
+                      </li>
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span class="leading-7">Full Access</span>
+                      </li>
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span class="leading-7">Source Files</span>
+                      </li>
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span class="leading-7">Free Appointments</span>
+                      </li>
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span class="leading-7">Enhanced Security</span>
+                      </li>
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span class="leading-7">Free Installment</span>
+                      </li>
+                    </ul>
+                    <a href="" class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-semibold rounded-md w-full mt-5 bg-theme text-white">Buy Now</a>
+                </div>
+             </div>
+             
+             <div class="xl:w-1/4 md:w-1/2 w-full p-5">
+                <div class="p-8 shadow-lg rounded-lg border-2 border-sky-500 dark:shadow-gray-700 dark:bg-slate-900">
+                    <h6 class="font-semibold mb-5 text-xl">Custom</h6>
+                    <p class="text-slate-400 mb-5 leading-7">Pricing plan will be as per client or company requirements</p>
+                    <ul class="list-none text-slate-400">
+                      <li class="mb-3 flex">
+                        <i class="fa-regular fa-circle-check text-theme/85 text-[20px] self-start me-2 mt-1"></i> 
+                        <span>Custom Pricing</span>
+                      </li>
+                    </ul>
+                    <a href="" class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-semibold rounded-md w-full mt-5 bg-theme/5 hover:bg-theme duration-300 hover:text-white text-theme">Talk to us</a>
+                </div>
+             </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- Our-pricing section end -->
+
+    <!-- Blog section start -->
+
+    <section class="Blog py-16 md:py-24" id="blogs">
+       <div class="container">
+            <div class="text-center pb-6">
+                <h3 class="font-semibold text-2xl mb-4 leading-normal">Blog or News</h3>
+                <p class="max-w-xl mx-auto text-slate-400">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+            </div>
+
+            <div class="flex flex-wrap mt-9">
+                <div class="xl:w-1/3 lg:w-1/3 md:w-1/2 w-full p-3">
+                    <div class="group overflow-hidden relative">
+                        <div class="relative rounded-md overflow-hidden">
+                            <img src="assets/Performance.jpeg" alt="" class="group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="mt-6">
+                            <div class="flex mb-4">
+                                <span class="flex items-center text-slate-400 text-sm">
+                                    <!-- <img src="assets/date.svg" alt="" class="w-6 me-2"> -->
+                                    <i class="fa-solid fa-calendar-days me-2 text-black dark:text-white"></i>
+                                    20th December, 2023
+                                </span>
+                                <span class="flex items-center text-slate-400 text-sm ms-6">
+                                    <!-- <img src="assets/time.svg" alt="" class="w-5 me-2"> -->
+                                    <i class="fa-regular fa-clock text-[16px] me-2 text-black dark:text-white"></i>
+                                    5 min read
+                                </span>
+                            </div>
+                            <a href="" class="text-lg font-semibold hover:text-theme duration-500 ease-in-out">Design your apps in your own way</a>
+                            <p class="text-slate-400 mt-2">This is required when, for example, the final text is not yet available.</p>
+                            <div class="mt-4">
+                                <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/3 lg:w-1/3 md:w-1/2 w-full p-3">
+                    <div class="group overflow-hidden relative">
+                        <div class="relative rounded-md overflow-hidden">
+                            <img src="assets/blog2.jpeg" alt="" class="group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="mt-6">
+                            <div class="flex mb-4">
+                                <span class="flex items-center text-slate-400 text-sm">
+                                    <!-- <img src="assets/date.svg" alt="" class="w-6 me-2"> -->
+                                     <i class="fa-solid fa-calendar-days me-2 text-black dark:text-white"></i>
+                                    20th December, 2023
+                                </span>
+                                <span class="flex items-center text-slate-400 text-sm ms-6">
+                                    <!-- <img src="assets/time.svg" alt="" class="w-5 me-2"> -->
+                                     <i class="fa-regular fa-clock text-[16px] me-2 text-black dark:text-white"></i>
+                                    5 min read
+                                </span>
+                            </div>
+                            <a href="" class="text-lg font-semibold hover:text-theme duration-500 ease-in-out">How apps is changing the IT world</a>
+                            <p class="text-slate-400 mt-2">This is required when, for example, the final text is not yet available.</p>
+                            <div class="mt-4">
+                                <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/3 lg:w-1/3 md:w-1/2 w-full p-3">
+                    <div class="group overflow-hidden relative">
+                        <div class="relative rounded-md overflow-hidden">
+                            <img src="assets/blog3.jpeg" alt="" class="group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="mt-6">
+                            <div class="flex mb-4">
+                                <span class="flex items-center text-slate-400 text-sm">
+                                    <!-- <img src="assets/date.svg" alt="" class="w-6 me-2"> -->
+                                     <i class="fa-solid fa-calendar-days me-2 text-black dark:text-white"></i>
+                                    20th December, 2023
+                                </span>
+                                <span class="flex items-center text-slate-400 text-sm ms-6">
+                                    <!-- <img src="assets/time.svg" alt="" class="w-5 me-2"> -->
+                                     <i class="fa-regular fa-clock text-[16px] me-2 text-black dark:text-white"></i>
+                                    5 min read
+                                </span>
+                            </div>
+                            <a href="" class="text-lg font-semibold hover:text-theme duration-500 ease-in-out">Smartest Applications for Business</a>
+                            <p class="text-slate-400 mt-2">This is required when, for example, the final text is not yet available.</p>
+                            <div class="mt-4">
+                                <a href="" class="text-theme">Read More<i class="fa-solid fa-angle-right ps-2 text-[13px]"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <!-- Blog section end -->
+     
+    <!-- contact section start -->
+
+    <section class="contact bg-slate-50 py-16 md:py-24 dark:bg-slate-800" id="contactus">
+        <div class="container">
+            <div class="text-center pb-6">
+                <h3 class="font-semibold text-2xl mb-4 leading-normal">Get in touch</h3>
+                <p class="max-w-xl mx-auto text-slate-400">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+            </div>
+
+            <div class="flex flex-wrap items-center mt-6">
+                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 w-full p-4">
+                     <img src="assets/contact.svg" alt="">
+                </div>
+                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 w-full p-4">
+                    <div class="bg-white rounded-md shadow-md p-6 ms-5 dark:bg-slate-900 dark:shadow-gray-700">
+                        <form class="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
+                            <div>
+                              <label for="first-name" class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-semibold dark:text-white">Your Name*</label>
+                              <input type="text" placeholder="Name :" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none transition duration-100 focus:ring dark:bg-slate-900 dark:text-slate-200 dark:border-gray-800" required/>
+                            </div>
+                      
+                            <div>
+                              <label for="last-name" class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-semibold dark:text-white">Your Email*</label>
+                              <input type="email" placeholder="Email :" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none transition duration-100 focus:ring dark:bg-slate-900 dark:text-slate-200 dark:border-gray-800" required/>
+                            </div>
+                      
+                            <div class="sm:col-span-2">
+                              <label for="subject" class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-semibold dark:text-white">Your Question*</label>
+                              <input type="text" placeholder="Subject" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none transition duration-100 focus:ring dark:bg-slate-900 dark:text-slate-200 dark:border-gray-800" required/>
+                            </div>
+                      
+                            <div class="sm:col-span-2">
+                              <label for="message" class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-semibold dark:text-white">Your Comment*</label>
+                              <textarea placeholder="Message" class="h-40 w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none transition duration-100 focus:ring dark:bg-slate-900 dark:text-slate-200 dark:border-gray-800" required></textarea>
+                            </div>
+                      
+                            <div class="flex items-center justify-between sm:col-span-2">
+                              <button class="inline-block rounded-lg bg-theme px-12 py-2 text-center text-sm font-semibold text-white outline-none transition duration-100 hover:bg-red-500 focus-visible:ring active:bg-green-800 md:text-base">Send</button>
+                      
+                              <span class="text-sm text-gray-500">*Required</span>
+                            </div>
+                      
+                            <p class="text-xs text-gray-400">By signing up to our newsletter you agree to our <a href="#" class="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>.</p>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section end -->
+
+    <!-- footer section start -->
+
+    <footer class="bg-slate-900 text-gray-200">
+        <div class="py-[30px] px-0 border-t border-slate-900">
+             <div class="container text-center">
+                 <div class="flex flex-wrap">
+                      <div class="xl:w-1/3 lg:w-1/3 w-full mb-6 lg:mb-0">
+                        <div class="logo inline-flex">
+                            <img src="assets/logo2.png" alt="">
+                        </div>
+                      </div>
+                      <div class="xl:w-1/3 lg:w-1/3 w-full mb-6 lg:mb-0">
+                        <div class="footer_text">
+                            <p class="mb-0">©2024 Upcover. Design with <i class="fa-solid fa-heart" style="color: #f20226;"></i> by <a href="">Kd patel</a></p>
+                        </div>
+                      </div>
+                      <div class="xl:w-1/3 lg:w-1/3 w-full mb-6 lg:mb-0">
+                        <div class="icon">
+                            <ul class="list-none inline-flex">
+                                <li class="mx-1">
+                                    <a href="" class="size-8 inline-flex justify-center items-center border border-gray-600 rounded-md hover:border-theme hover:bg-theme">
+                                        <i class="fa-solid fa-cart-shopping fa-sm"></i>
+                                    </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="" class="size-8 inline-flex justify-center items-center border border-gray-600 rounded-md hover:border-theme hover:bg-theme">
+                                        <i class="fa-brands fa-dribbble fa-sm"></i>
+                                    </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="" class="size-8 inline-flex justify-center items-center border border-gray-600 rounded-md hover:border-theme hover:bg-theme">
+                                        <i class="fa-brands fa-linkedin-in fa-sm"></i>
+                                    </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="" class="size-8 inline-flex justify-center items-center border border-gray-600 rounded-md hover:border-theme hover:bg-theme">
+                                        <i class="fa-brands fa-facebook-f fa-sm"></i>
+                                    </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="" class="size-8 inline-flex justify-center items-center border border-gray-600 rounded-md hover:border-theme hover:bg-theme">
+                                        <i class="fa-brands fa-instagram fa-sm"></i>
+                                    </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="" class="size-8 inline-flex justify-center items-center border border-gray-600 rounded-md hover:border-theme hover:bg-theme">
+                                        <i class="fa-brands fa-twitter fa-sm"></i>
+                                    </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="" class="size-8 inline-flex justify-center items-center border border-gray-600 rounded-md hover:border-theme hover:bg-theme">
+                                        <i class="fa-regular fa-envelope fa-sm"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                 </div>
+             </div>
+        </div>
+    </footer>
+
+    <!-- footer section end -->
+
+
+
+    <!-- jquery file -->
+     <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- slider js file -->
+     <script src="js/owl.carousel.min.js"></script>
+
+    <!-- custom js file -->
+     <script src="js/custom.js"></script>
+</body>
+</html>
